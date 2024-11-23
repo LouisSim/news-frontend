@@ -16,12 +16,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "echo 'node_modules\n.cache' > build/.gitignore",
+    "postbuild": "echo 'node_modules/\n.cache' > build/.gitignore",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-},
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.2.0",
+    "webpack": "^5.96.1"
   }
 }
