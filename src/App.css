@@ -13,10 +13,10 @@
   }
 }
 
-h1{
-  color: #E0E0E0   ;
+h1 {
+  color: #E0E0E0;
   text-align: center;
-  margin: '20px 0'
+  margin: 20px 0;
 }
 
 .App-header {
@@ -40,5 +40,19 @@ h1{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+
+  h1 {
+    font-size: 1.5em;
   }
 }
