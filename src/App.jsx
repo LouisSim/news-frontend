@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div>
-      <h1 >NewsByte</h1>
+      <h1 ><span class="highlighted-letter">N</span>ews<span class="highlighted-letter">B</span>yte</h1>
       <SearchBar onSearch={handleSearch} />
       <FactDisplay articles={articles} error={error} isLoading={isLoading}/>
     </div>

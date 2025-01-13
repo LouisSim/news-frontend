@@ -12,10 +12,16 @@ const FactDisplay = ({ articles, error, isLoading }) => {
   const cache = useRef({});
 
   useEffect(() => {
+    if(isLoading){
+      setExpandedArticleIndex(null);
+    }
+  }, [isLoading]);
+
+  useEffect(() => {
     const fetchTopHeadlines = async () => {
       try {
         const response = await axios.get(`${BASE_URL}/top-headlines`);
-        setTopHeadlines(response.data.articles);
+        setTopHeadlines(response.data.headlines);
       } catch (err) {
         console.error('Error fetching top headlines:', err);
       } finally {
@@ -79,6 +85,25 @@ const FactDisplay = ({ articles, error, isLoading }) => {
             <li key={index} className="fact-item bullet-color" onClick={() => handleToggleExpand(index, article)}>
               <h4>{article.title}</h4>
               <p className='article-description'>{article.description}</p>
+              <div
+              className={`expanded-content ${expandedArticleIndex === index ? 'expanded' : ''}`}
+              style={{
+                maxHeight: expandedArticleIndex === index ? 'none' : '0',
+                overflow: 'hidden',
+                transition: 'max-height 0.3s ease-in-out',
+              }}
+            >
+              {loadingAdditionalData && expandedArticleIndex === index ? (
+                <p>Loading additional information...</p>
+              ) : (
+                expandedArticleIndex === index && additionalData[index] && (
+                  <>
+                    <p className='ai-summary'> <div className='add-info-header'>AI Summary:</div> {additionalData[index].summary}</p>
+                    <p className='ai-summary'> <div className='add-info-header'>Bias Rating:</div> {additionalData[index].biasRating}</p>
+                  </>
+                )
+              )}
+            </div>
               <a href={article.url} target="_blank" rel="noopener noreferrer">
                 Read full article
               </a>

@@ -17,6 +17,12 @@ h1 {
   color: #E0E0E0;
   text-align: center;
   margin: 20px 0;
+  font-size: calc(10px + 3vmin);;
+}
+h1 .highlighted-letter {
+  color: #0088ff; /* Red color for the single letter */
+  font-weight: bolder;
+  font-size: 1.25em; /* Larger font size for the single letter */
 }
 
 .App-header {

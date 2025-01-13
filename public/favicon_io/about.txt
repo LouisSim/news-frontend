@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Exo
+- Font Title: Roboto
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/exo/v21/4UaZrEtFpBI4f1ZSIK9d4LjJ4o0wCwNsOl4p5Is.ttf
+- Font Source: https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEammTggvWl0Qn.ttf
 - Font License: undefined)

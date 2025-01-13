@@ -7,7 +7,8 @@
 
 .fact-display h3 {
   margin-bottom: 20px;
-  color: #E0E0E0;
+  color: #0088ff;
+  font-size: 2em;
 }
 
 .ai-summary {
@@ -38,9 +39,12 @@
 }
 
 .fact-item p {
-  margin: 0 0 10px;
-  color: #cecece;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 15px; /* Increased bottom margin for better spacing between paragraphs */
+  color: #ececec; /* Light color for text */
+  font-family: Roboto, Helvetica, sans-serif; /* Clean, readable font */
+  font-size: 16px; /* Slightly larger font for improved readability */
+  line-height: 1.8; /* Increased line height for better spacing between lines */
+  letter-spacing: 0.5px; /* Added a slight letter spacing for clarity */
 }
 
 .article-description p {
