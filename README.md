@@ -6,7 +6,7 @@ A modern and intelligent news app that provides concise AI-generated summaries a
 - 🌟 **AI-Generated Summaries**: Get brief, accurate summaries of news articles using advanced natural language processing.
 - ⚖️ **Bias Ratings**: Assess the political or ideological leanings of news articles to understand potential biases.
 - 🖥️ **Modern UI**: A sleek, responsive design built with **React**.
-- 🔍 **Search and Filter**: Easily search for topics or filter by categories like politics, technology, health, and more.
+- 🔍 **Search and Filter**: Easily search for topics.
 - 🌐 **Dynamic News Feed**: Stay up-to-date with a real-time feed of the latest articles.
 
 ## Tech Stack
