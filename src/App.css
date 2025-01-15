@@ -62,3 +62,17 @@ h1 .highlighted-letter {
     font-size: 1.5em;
   }
 }
+
+.connection-status {
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red; /* Default to red (disconnected) */
+}
+
+.connection-status.connected {
+  background-color: green; /* Green when connected */
+}
